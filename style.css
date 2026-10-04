@@ -1,0 +1,179 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html, body{
+    width: 100%;
+    height: 100vh;
+}
+@font-face{
+    font-family: "kajiro";
+    src: url("C:\Users\qaboo\Desktop\New folder (2)\font\kajiro\kajiro\Kajiro\Kajiro Bold.ttf");
+}
+#main{
+    width:100%;
+    height: 100vh;
+    /* background-color: blue; */
+    position: relative;
+
+}
+#back{
+    width: 100%;
+    height: 100vh;
+    top:0;
+    left:0;
+    z-index: 1;
+    position: absolute;
+    /* background-color: black; */
+}
+#back img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.top {
+    pointer-events: none;
+    width: 100%;
+    height: 100vh;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 10;
+}
+
+#workingarea{  
+    margin: 0 auto;
+    width: 80%;
+    max-width: 1920px;
+    /* background-color: red; */
+    height: 100vh;
+    /* border: 1px solid black; */
+    position: relative;
+    z-index: 11;
+}
+
+#nav{
+    width: 100%;
+    padding: 40px 0;
+    display: flex;
+    justify-content:space-between;
+    align-items: center;
+}
+
+#nav img{
+    height: 60px;
+}
+
+
+#nleft, #nright{
+    display: flex;
+    align-items: center;
+    gap: 60px;
+}
+
+#nleft  a{
+    text-decoration: none;
+    font-weight: 600;
+    text-transform: uppercase;
+    font-size: 12px;
+    letter-spacing: 1px;
+    color: black;
+    font-family: "gilroy";
+    pointer-events: all;
+}
+#nright a{
+    text-decoration: none;
+    font-weight: 600;
+    text-transform: uppercase;
+    font-size: 12px;
+    letter-spacing: 1px;
+    color: black;
+    font-family: "gilroy";
+}
+
+#hero{
+    position: absolute;
+    top: 50%;
+    left: 0;
+    transform: translate(0%, -50%);
+    display: flex;
+    justify-content: space-between;
+    width:100%;
+    /* height: 100px; */
+    /* background-color: darkorange; */
+    margin-top: 70px;
+}
+
+#heroleft{
+    min-width: 50%;
+    /* height: 100px; */
+    /* background-color: coral; */
+    align-items: end;
+    /* margin-top: 60px; */
+}
+#heroleft .elem h1:nth-child(1){
+    top:0;
+}
+#heroleft .elem h1{
+    font-family: "kajiro";
+    color:#fff;
+    font-weight: 100;
+    font-size: 10vw;
+    /* text-align: right;
+    align-items: end; */
+    line-height: .9;
+    position: absolute;
+    top:100%;
+    left:0;
+}
+#heroleft .elem{
+    overflow: hidden;
+    height: 9vw;
+    position: relative;
+    /* background-color: blueviolet; */
+}
+
+#heroleft button{
+    padding: .8vw 3vw;
+    background-color: black;
+    color: #fff;
+    font-size: 4vw;
+    font-family: "kajiro";
+    font-weight: 300;
+    /* margin-top: 2vw; */
+    pointer-events: all;
+}
+#heroright{
+    display: flex;
+    flex-direction:column;
+    align-items: flex-end;
+    width: 20%;
+    /* height: 100px; */
+    /* background-color:darkred */
+    /* margin-top: 60px; */
+}
+
+#heroright p{
+    font-size: 14px;
+    font-weight: 300;
+    text-align: right;
+    /* margin-bottom: 50px; */
+    color: #fff;
+}
+
+#heroright .imgdiv{
+    width: 100%;
+    /* background-color: red; */
+    background-image: url(https://plus.unsplash.com/premium_photo-1788632973789-a9658ffa5851?q=80&w=871&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D);
+    background-size: cover;
+    background-position: center;
+    height: 170px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+#heroright p:nth-child(3){
+    margin-bottom: 30px;
+}
